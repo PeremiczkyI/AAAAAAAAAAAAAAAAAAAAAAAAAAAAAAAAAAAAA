@@ -1,0 +1,6 @@
+string[] allomany = File.ReadAllLines("a file neve vagy eleresi utja");
+
+foreach (var item in allomany) 
+{
+    a_lista_neve.Add(new Az_osztaly_neve(item));
+}
