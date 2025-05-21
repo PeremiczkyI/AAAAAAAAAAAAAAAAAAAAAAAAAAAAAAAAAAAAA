@@ -7,7 +7,7 @@ namespace helsinki1952
         static List<Versenyzo> versenyzoList = new List<Versenyzo>();
         static void Main(string[] args)
         {
-            string path = @"C:\Users\szabolcs\Desktop\Új mappa (2)\helsinki.txt";
+            string path = @"txt helye";
 
             feladat2(path);
 
@@ -105,7 +105,7 @@ namespace helsinki1952
                 szum += item.VersenyzokSzama;
             }
 
-            StreamWriter sw = new StreamWriter(@"C:\Users\szabolcs\Desktop\Új mappa (2)\foglalas.txt");
+            StreamWriter sw = new StreamWriter(@"txt helye");
             sw.WriteLine($"Szeretnék asztalokat foglalni {szum} főre!");
             sw.Close();
         }
