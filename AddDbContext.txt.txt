@@ -1,5 +1,0 @@
-builder.Services.AddDbContext<HalakContext>(options =>
-  {
-      var connectionString = builder.Configuration.GetConnectionString("MySql");
-      options.UseMySQL(connectionString);
-  });
