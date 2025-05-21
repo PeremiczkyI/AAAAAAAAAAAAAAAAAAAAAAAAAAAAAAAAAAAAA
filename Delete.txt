@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const DeleteButton = ({ id }) => {
+  const [status, setStatus] = useState('');
+
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`https://example.com/api/data/${id}`);
+      setStatus('Sikeres törlés');
+    } catch (error) {
+      setStatus('Hiba történt: ' + error.message);
+      console.error('Hiba történt!', error);
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={handleDelete}>Törlés</button>
+      {status && <p>{status}</p>}
+    </div>
+  );
+};
+
+export default DeleteButton;
