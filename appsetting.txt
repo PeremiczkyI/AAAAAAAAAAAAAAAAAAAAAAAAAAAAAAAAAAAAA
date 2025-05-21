@@ -1,0 +1,2 @@
+"ConnectionStrings": {
+  "MySql": "server=localhost;database=halak;user=root;password=;ssl mode=none;"
